@@ -117,3 +117,6 @@ Some of the major event sequences are summarized in the sequence diagrams below.
 
 ![Detailed Sequence Diagram for Event Change](Detailed_Sequence_Diagram_for_Event_Change.png)
 *Detailed Sequence Diagram for Event Change*
+
+## References
+* [Particle Maker Kit Tutorials](https://docs.particle.io/tutorials/hardware-projects/maker-kit/)
