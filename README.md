@@ -16,5 +16,5 @@ Basic File Details:
 * 'ui' contains HTML, JavaScript, and CSS files that determine the appearance of the user interface in a web browser
 
 Acknowledgements:
-CSE 222: Internet of Things
-Standard Libraries: OneWire, SparkDallasTemperature
+* CSE 222: Internet of Things
+* Standard Libraries: OneWire, SparkDallasTemperature
