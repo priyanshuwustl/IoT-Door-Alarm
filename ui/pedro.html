@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alarm Service</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width-device-width, initialscale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/pedro.css">
+  <script src="./resources/particle/particle.min.js"></script>
+
+  <!-- bootstrapCDN files-->
+  <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+
+</head>
+<body hidden>
+  <div id="contents" class="mx-auto">
+    <!--DOOR MODE MAIN PAGE-->
+    <div id="mainpage">
+      <h2>Door Mode</h2>
+      <button class="powerButton">Power</button>
+      <br>
+      <button class="lockButton">Lock or Unlock</button>
+      <br>
+      <button class="stayModeButton">Change Mode</button>
+      <br>
+      <a class="viewSensorsButton buttonLink" href="#sensorpage">View Sensor Data</a>
+      <br>
+      <a class="refrigeratorModeButton buttonLink" href="#refrigeratorpage">Change to Refrigerator Mode</a>
+      <br>
+      <a class="settingsButton buttonLink" href="#settingspage">Settings</a>
+      <br>
+    </div>
+
+    <!--VIEW SENSOR DATA PAGE-->
+    <div id="sensorpage">
+      <h2>Sensor Data</h2>
+      <p>Temperature: <span class="tempDataStatus"></span> °C</p>
+      <br>
+      <p>Time of Last Motion: <span class="lastMovementStatus"></span></p>
+      <br>
+      <!--<a class="viewCameraButton buttonLink">View Camera</a>
+      <br>-->
+      <a class="homeButton buttonLink" href="#mainpage">Home</a>
+      <br>
+      <a class="settingsButton buttonLink" href="#settingspage">Settings</a>
+      <br>
+    </div>
+
+    <!--REFRIGERATOR MODE MAIN PAGE-->
+    <div id="refrigeratorpage">
+      <h2>Refrigerator Mode</h2>
+      <button class="powerButton">Power</button>
+      <br>
+      <button class="lockButton">Lock or Unlock</button>
+      <br>
+      <button class="stayModeButton">Change Mode</button>
+      <br>
+      <p>Temperature: <span class="tempDataStatus"></span> °C</p>
+      <br>
+      <p>Time of Last Motion: <span class="lastMovementStatus"></span></p>
+      <br>
+      <a class="homeButton buttonLink" href="#mainpage">Change to Door Mode</a>
+      <br>
+      <a class="settingsButton buttonLink" href="#settingspage">Settings</a>
+      <br>
+    </div>
+
+    <!--SETTINGS PAGE-->
+    <div id="settingspage">
+      <h2>Settings</h2>
+      <a class="homeButton buttonLink" href="#mainpage">Home</a>
+      <h5>Stay Mode</h5>
+      <label>Alarm: <input type="checkbox" id="stayAlarmSetting"></input></label> <br/>
+      <label hidden>Lock: <input type="checkbox" id="stayLockSetting"></input></label> <br/>
+      <label>Camera: <input type="checkbox" id="stayCameraSetting"></input></label> <br/>
+      <label>Notifications: <input type="checkbox" id="stayNotificationsSetting"></input></label>
+      <h5>Away Mode</h5>
+      <label>Alarm: <input type="checkbox" id="awayAlarmSetting"></input></label> <br/>
+      <label hidden>Lock: <input type="checkbox" id="awayLockSetting"></input></label> <br/>
+      <label>Camera: <input type="checkbox" id="awayCameraSetting"></input></label> <br/>
+      <label>Notifications: <input type="checkbox" id="awayNotificationsSetting"></input></label> <br/>
+
+      <label>Slack URL: <input type="text" id="slackInputBox"></input></label>
+    </div>
+
+    <div id="camerapage">
+      <h2>Camera (not yet implemented)</h2>
+      <a class="homeButton" href="#mainpage">Home</a>
+    </div>
+  </div>
+  <footer>by Priyanshu Jain and Ryan Leach</footer>
+  <script src="js/AlarmApp.js">
+  </script>
+  <script src="js/AlarmModel.js">
+  </script>
+</body>
+</html>
